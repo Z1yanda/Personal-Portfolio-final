@@ -133,7 +133,7 @@ class PortfolioChatbot {
             ],
             contact: [
                 "You can reach me through the contact form on my portfolio or connect with me on social media.",
-                "Feel free to contact me through my portfolio website. I'm always open to new opportunities!"
+                "Feel free to contact me on 065 293 9819, my email address is zdddletsoma@gmail.com. For more Check out my linkeIn & Github. I'm always open to new opportunities!"
             ],
             default: [
                 "I'm not sure about that. You can ask me about my projects, skills, experience, or how to contact me.",
