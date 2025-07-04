@@ -267,6 +267,81 @@ class PortfolioChatbot {
                 .chatbot-minimized .chatbot-input {
                     display: none;
                 }
+
+                /* Open Chatbot Button */
+                .chatbot-open-btn {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 60px;
+                    height: 60px;
+                    background: #FF6F61;
+                    color: white;
+                    border: none;
+                    border-radius: 50%;
+                    font-size: 24px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 20px rgba(255, 111, 97, 0.3);
+                    transition: all 0.3s ease;
+                    z-index: 9998;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .chatbot-open-btn:hover {
+                    background: #e55a4f;
+                    transform: scale(1.1);
+                    box-shadow: 0 6px 25px rgba(255, 111, 97, 0.4);
+                }
+
+                .chatbot-open-btn.hidden {
+                    display: none;
+                }
+
+                /* Typing indicator */
+                .typing-indicator {
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 12px;
+                    background: white;
+                    border: 1px solid #ddd;
+                    border-radius: 15px;
+                    max-width: 80%;
+                    margin: 10px 0;
+                }
+
+                .typing-dots {
+                    display: flex;
+                    gap: 3px;
+                }
+
+                .typing-dot {
+                    width: 6px;
+                    height: 6px;
+                    background: #FF6F61;
+                    border-radius: 50%;
+                    animation: typing 1.4s infinite;
+                }
+
+                .typing-dot:nth-child(2) {
+                    animation-delay: 0.2s;
+                }
+
+                .typing-dot:nth-child(3) {
+                    animation-delay: 0.4s;
+                }
+
+                @keyframes typing {
+                    0%, 60%, 100% {
+                        transform: translateY(0);
+                        opacity: 0.4;
+                    }
+                    30% {
+                        transform: translateY(-10px);
+                        opacity: 1;
+                    }
+                }
             </style>
         `;
         
