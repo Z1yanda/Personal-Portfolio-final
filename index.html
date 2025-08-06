@@ -22,6 +22,67 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
+        <!-- Custom Styles for Project Cards -->
+        <style>
+            .project-card {
+                background: #fff;
+                border-radius: 10px;
+                padding: 25px;
+                margin-bottom: 25px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            }
+            
+            .project-card h3 {
+                color: #333;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+            
+            .project-card p {
+                color: #666;
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+            
+            .project-card a {
+                display: inline-block;
+                background: linear-gradient(45deg, #007bff, #0056b3);
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: 500;
+                transition: background 0.3s ease;
+            }
+            
+            .project-card a:hover {
+                background: linear-gradient(45deg, #0056b3, #003d82);
+                color: white;
+                text-decoration: none;
+            }
+            
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 25px;
+                margin-top: 30px;
+            }
+            
+            @media (max-width: 768px) {
+                .projects-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -50,28 +111,24 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#service">Recommendations<i class="fa fa-tasks"></i></a>
                                 </li>
-                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="#portfolio">Projects<i class="fa fa-file-archive"></i></a>
                                 </li>
-                                
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Education<i class="fa fa-file-archive"></i></a>
+                                    <a class="nav-link" href="#education">Education<i class="fa fa-graduation-cap"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#contact">Contact<i class="fa fa-envelope"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Skills<i class="fa fa-envelope"></i></a>
+                                    <a class="nav-link" href="#skills">Skills<i class="fa fa-cogs"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div class="sidebar-footer">
-                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    <a href="https://www.linkedin.com/in/ziyanda-letsoma-tom-b8aa00205/"><i class="fab fa-linkedin-in"></i></a> 
                 </div>
             </div>
             <div class="content">
@@ -79,7 +136,7 @@
                 <div class="header" id="header">
                     <div class="content-inner">
                         <p>I'm</p>
-                        <h1>Ziyanda Tom </h1>
+                        <h1>Ziyanda Tom</h1>
                         <h2></h2>
                         <div class="typed-text">AI Associate, Aspiring AI Engineer, Software Dev, Digital Marketing, Hospitality management</div>
                     </div>
@@ -87,8 +144,6 @@
                 <!-- Header End -->
                 
                 <!-- Large Button Start -->
-
-                <!-- RESUME -->
                 <div class="large-btn">
                     <div class="content-inner">
                         <a class="btn" href="/img/Ziyanda Tom_AI_CV2025.pdf"><i class="fa fa-download"></i>Resume</a>
@@ -111,38 +166,38 @@
                                 <p>
                                     Ziyanda currently working as an AI Associate at Capaciti. I have a background in software development familiar with several programming languages. Before transitioning into the tech industry, I worked in the hospitality sector, which gave me a unique perspective on people and service.
 
-I’m deeply fascinated by technology and its ability to transform lives. Beyond tech, I’m also a creative at heart — passionate about handcrafted art, a music lover, and aspiring to become a DJ.
+I'm deeply fascinated by technology and its ability to transform lives. Beyond tech, I'm also a creative at heart — passionate about handcrafted art, a music lover, and aspiring to become a DJ.
                                 </p>
-                                <a class="btn" href="#">Hire Me</a>
+                                <a class="btn" href="#contact">Hire Me</a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="skills">
                                     <div class="skill-name">
-                                        <p></p><p></p>
+                                        <p>Python</p><p>85%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <div class="skill-name">
-                                        <p></p><p></p>
+                                        <p>JavaScript</p><p>90%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="skills">
                                     <div class="skill-name">
-                                        <p></p><p></p>
+                                        <p>AI/ML</p><p>80%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <div class="skill-name">
-                                        <p></p><p></p>
+                                        <p>Web Development</p><p>85%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
@@ -165,36 +220,20 @@ I’m deeply fascinated by technology and its ability to transform lives. Beyond
                                 <div class="edu-col">
                                     <span>05-09-2023 <i>to</i> 09-12-2024</span>
                                     <h3>WeThinkCode</h3>
+                                    <p>Software Development Training</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
                                     <span>22-02-2017 <i>to</i> 18-04-2021</span>
                                     <h3>Cape Peninsula University of Technology</h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span><i></i></span>
-                                    <h3></h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span><i></i></span>
-                                    <h3></h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span><i></i></span>
-                                    <h3></h3>
-                                    <p></p>
+                                    <p>Hospitality Management</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Education Start -->
+                <!-- Education End -->
                 
                 <!-- Experience Start -->
                 <div class="experience" id="experience">
@@ -284,30 +323,54 @@ I’m deeply fascinated by technology and its ability to transform lives. Beyond
                 </div>
                 <!-- Service End -->
                 
-                <!-- Portfolio Start -->
+                <!-- Portfolio/Projects Start -->
                 <div class="portfolio" id="portfolio">
                     <div class="content-inner">
                         <div class="content-header">
                             <h2>Projects</h2>
                         </div>
-                        <div class="row">
+                        
+                        <!-- Latest Projects Section -->
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h3>CAPACITI Website</h3>
+                                <p>Redesigned the CAPACITI website and added a chatbot to improve user engagement and provide instant support.</p>
+                                <a href="https://app.netlify.com/projects/stellar-cocada-3e0365/overview" target="_blank">View Project</a>
+                            </div>
+                            
+                            <div class="project-card">
+                                <h3>CraftedNudge Website</h3>
+                                <p>My business website featuring a custom chatbot for enhanced customer interaction and support.</p>
+                                <a href="https://app.netlify.com/projects/poetic-ganache-30f02a/overview" target="_blank">View Project</a>
+                            </div>
+                            
+                            <div class="project-card">
+                                <h3>Shade Match App</h3>
+                                <p>AWS PartyRock project - Created a cosmetic shade matching application using AI technologies.</p>
+                                <a href="https://partyrock.aws/u/ziyanda1994/mFYfHE9_s/Shade-Match" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Filter Section -->
+                        <div class="row" style="margin-top: 40px;">
                             <div class="col-lg-12">
                                 <ul id="portfolio-flters">
                                     <li data-filter="*" class="filter-active">All</li>
-                                    <li data-filter=".web-des"></li>
-                                    <li data-filter=".web-dev"></li>
-                                    <li data-filter=".dig-mar"></li>
+                                    <li data-filter=".web-des">Web Design</li>
+                                    <li data-filter=".web-dev">Web Development</li>
+                                    <li data-filter=".ai-proj">AI Projects</li>
                                 </ul>
                             </div>
                         </div>
+                        
                         <div class="row portfolio-container">
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="/img/portfolio-1.png" class="img-fluid" alt="">
-                                        <a href="https://landbot.online/v3/H-2887235-4OBEO6RDVQYT9AHU/index.html" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="https://landbot.online/v3/H-2887235-4OBEO6RDVQYT9AHU/index.html" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="https://landbot.online/v3/H-2887235-4OBEO6RDVQYT9AHU/index.html"><span></span></a>
+                                        <img src="/img/CapacitiWebsite.png" class="img-fluid" alt="CAPACITI Website">
+                                        <a href="/img/CapacitiWebsite.png" data-lightbox="portfolio" data-title="CAPACITI Website" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://app.netlify.com/projects/stellar-cocada-3e0365/overview" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">CAPACITI Website <span>Web Design</span></a>
                                     </figure>
                                 </div>
                             </div>
@@ -315,63 +378,39 @@ I’m deeply fascinated by technology and its ability to transform lives. Beyond
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="/img/joblogo.png" class="img-fluid" alt="">
-                                        <!-- <a href="/img/joblogo.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a> -->
+                                        <img src="/img/craftedNudgeWebsite.png" class="img-fluid" alt="CraftedNudge Website">
+                                        <a href="/img/craftedNudgeWebsite.png" data-lightbox="portfolio" data-title="CraftedNudge Website" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://app.netlify.com/projects/poetic-ganache-30f02a/overview" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">CraftedNudge <span>Business Website</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item ai-proj">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/shadeMatcher.png" class="img-fluid" alt="Shade Match App">
+                                        <a href="/img/shadeMatcher.png" data-lightbox="portfolio" data-title="Shade Match App" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://partyrock.aws/u/ziyanda1994/mFYfHE9_s/Shade-Match" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">Shade Match <span>AI Application</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="/img/joblogo.png" class="img-fluid" alt="Job Portal">
+                                        <a href="/img/joblogo.png" class="link-preview" data-lightbox="portfolio" data-title="Job Portal" title="Preview"><i class="fa fa-eye"></i></a>
                                         <a href="https://68414cd9009171a8732cf424--deluxe-beijinho-7e5471.netlify.app/" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">job portal<span></span></a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#"><span></span></a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Development</span></a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#"><span></span></a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#"><span></span></a>
+                                        <a class="portfolio-title" href="#">Job Portal <span>Web Development</span></a>
                                     </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> 
-                <!-- Portfolio Start -->
-                
-
+                <!-- Portfolio/Projects End -->
                 
                 <!-- Contact Start -->
                 <div class="contact" id="contact">
@@ -384,8 +423,8 @@ I’m deeply fascinated by technology and its ability to transform lives. Beyond
                                 <div class="contact-info">
                                     <p><i class="fa fa-user"></i>Ziyanda Tom</p>
                                     <p><i class="fa fa-tag"></i>AI Associate</p>
-                                    <p><i class="fa fa-envelope"></i><a href="zdddletsoma@gmail.com">zdddletsoma@gmail.com</a></p>
-                                    <p><i class="fa fa-phone"></i><a href="tel:+1234567890">+27 652 939 819</a></p>
+                                    <p><i class="fa fa-envelope"></i><a href="mailto:zdddletsoma@gmail.com">zdddletsoma@gmail.com</a></p>
+                                    <p><i class="fa fa-phone"></i><a href="tel:+27652939819">+27 652 939 819</a></p>
                                     <p><i class="fa fa-map-marker"></i>3A Howe Street, Observatory, Cape Town, South Africa</p>
                                     <div class="social">
                                         <a class="btn" href=""><i class="fab fa-twitter"></i></a>
@@ -397,21 +436,21 @@ I’m deeply fascinated by technology and its ability to transform lives. Beyond
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form " id="contact-form" action="https://formspree.io/f/mvgrklng" method="POST">
+                                <div class="form">
                                     <form id="contact-form" action="https://formspree.io/f/mvgrklng" method="POST">
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" placeholder="Your Name" />
+                                                <input type="text" name="name" class="form-control" placeholder="Your Name" required />
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="email" class="form-control" placeholder="Your Email" />
+                                                <input type="email" name="email" class="form-control" placeholder="Your Email" required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject" />
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required />
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                                         </div>
                                         <div><button class="btn" type="submit">Send Message</button></div>
                                     </form>
@@ -435,7 +474,7 @@ I’m deeply fascinated by technology and its ability to transform lives. Beyond
                         </div>
                     </div>
                 </div>
-                <!-- Footer Start -->
+                <!-- Footer End -->
             </div>
         </div>
         
